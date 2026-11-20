@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fleurs Roussel - Artisan Fleuriste à Blois</title>
+
+    <!-- CSS compilé avec Tailwind -->
+    <link rel="stylesheet" href="dist/output.css">
+    <!-- Polices Google Fonts (Playfair Display Bold 700 + Inter 400, 500, 600) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[var(--color-creme)] text-[var(--color-encre)] font-[var(--font-texte)] text-[16px] antialiased">
+
+<!-- CONTENEUR PRINCIPAL -->
+<div class="w-full flex flex-col">
+
+    <!--1. HEADER -->
+    <header class="bg-[var(--color-creme)] w-full border-b border-[var(--color-encre)]/10">
+        <div class="w-full max-w-[1152px] mx-auto px-4 md:px-8 py-4 md:py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+            <!-- Logo + Bouton mobile -->
+            <div class="flex items-center justify-between">
+                <a href="#" class="flex items-center gap-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">
+                    <img src="images/logo-roussel.svg"
+                         alt="Logo Fleurs Roussel"
+                         class="w-9 h-9 object-contain">
+                    <span class="font-[var(--font-titres)] text-[24px] font-bold text-[var(--color-framboise)]">
+                        Fleurs Roussel
+                    </span>
+                </a>
+
+                <a href="#commander"
+                   class="md:hidden bg-[var(--color-framboise)] text-white text-[16px] font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--color-bordeaux)] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">
+                    Commander
+                </a>
+            </div>
+
+            <nav class="flex justify-between md:justify-center md:gap-8 items-center text-[14px] font-medium text-[var(--color-encre)]"
+                 aria-label="Navigation principale">
+                <a href="#bouquets" class="hover:text-[var(--color-framboise)] transition rounded px-1 py-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">Bouquets</a>
+                <a href="#ateliers" class="hover:text-[var(--color-framboise)] transition rounded px-1 py-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">Ateliers</a>
+                <a href="#livraison" class="hover:text-[var(--color-framboise)] transition rounded px-1 py-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">Livraison</a>
+                <a href="#contact" class="hover:text-[var(--color-framboise)] transition rounded px-1 py-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">Contact</a>
+            </nav>
+
+            <a href="#commander"
+               class="hidden md:inline-block bg-[var(--color-framboise)] text-white text-[16px] font-semibold px-6 py-2.5 rounded-full hover:bg-[var(--color-bordeaux)] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">
+                Commander
+            </a>
+
+        </div>
+    </header>
+
+
+    <!--2. SECTION HERO-->
+    <section class="bg-[var(--color-creme)] w-full pt-8 pb-16 md:py-20">
+        <div class="w-full max-w-[1152px] mx-auto px-4 md:px-8 flex flex-col md:flex-row md:items-center gap-10">
+
+
+            <div class="w-full md:w-1/2 flex flex-col">
+                <span class="inline-block w-fit text-[12px] font-semibold uppercase tracking-[0.1em] text-[var(--color-sauge)] mb-4">
+                    Artisan fleuriste à Blois depuis 1998
+                </span>
+
+                <h1 class="font-[var(--font-titres)] text-[36px] md:text-[48px] lg:text-[60px] font-bold text-[var(--color-encre)] leading-[1.1] mb-6">
+                    Des fleurs de saison, composées à la main
+                </h1>
+
+                <p class="text-[18px] font-normal text-[var(--color-encre)]/80 leading-relaxed mb-8">
+                    Bouquets du marché, roses anciennes et compositions champêtres :
+                    chaque semaine, Madame Roussel choisit les plus belles fleurs
+                    des producteurs de la région.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+
+                    <a href="#bouquets"
+                       class="text-center bg-[var(--color-framboise)] text-white text-[16px] font-semibold px-7 py-3.5 rounded-full hover:bg-[var(--color-bordeaux)] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">
+                        Voir les bouquets
+                    </a>
+                    <a href="#ateliers"
+                       class="text-center border-2 border-[var(--color-framboise)] text-[var(--color-framboise)] text-[16px] font-semibold px-7 py-3.5 rounded-full hover:bg-[var(--color-framboise)] hover:text-white transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">
+                        Nos ateliers
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2">
+                <div class="w-full aspect-square rounded-[24px] overflow-hidden shadow-sm">
+                    <img src="images/bouquet-vase.svg"
+                         alt="Illustration d'un bouquet de fleurs de saison dans un vase"
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 3. SECTION BOUQUETS DE LA SEMAINE-->
+    <section id="bouquets" class="bg-[var(--color-blanc)] w-full py-16 md:py-24">
+        <div class="w-full max-w-[1152px] mx-auto px-4 md:px-8 flex flex-col">
+
+            <div class="w-full md:max-w-2xl flex flex-col gap-3 mb-12">
+                <h2 class="font-[var(--font-titres)] text-[30px] md:text-[36px] font-bold text-[var(--color-encre)] leading-tight">
+                    Les bouquets de la semaine
+                </h2>
+
+                <p class="text-[16px] font-normal text-[var(--color-encre)]/80 leading-relaxed">
+                    Trois compositions renouvelées chaque lundi, en taille moyenne.
+                    Livraison possible le jour même à Blois.
+                </p>
+            </div>
+
+            <!-- Grille des 3 cartes -->
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- CARTE 1 : Bouquet du marché -->
+                <article class="bg-[var(--color-creme)] rounded-[16px] overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+
+                        <div class="w-full aspect-[4/3] bg-[#FCECE8] overflow-hidden">
+                            <img src="images/bouquet-marche.svg"
+                                 alt="Bouquet du marché"
+                                 class="w-full h-full object-cover">
+                        </div>
+
+                        <div class="p-6 pb-2">
+                            <h3 class="font-[var(--font-titres)] text-[20px] font-bold text-[var(--color-encre)] mb-2">
+                                Bouquet du marché
+                            </h3>
+
+                            <p class="text-[14px] font-normal text-[var(--color-encre)]/80 leading-relaxed">
+                                Renoncules, marguerites et brins de lavande,
+                                au gré des arrivages.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between px-6 pb-6 pt-4">
+                        <span class="text-[18px] font-semibold text-[var(--color-bordeaux)]">
+                            35 €
+                        </span>
+                        <a href="#commander"
+                           class="bg-[var(--color-framboise)] text-white text-[16px] font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--color-bordeaux)] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">
+                            Commander
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARTE 2 : Roses anciennes -->
+                <article class="bg-[var(--color-creme)] rounded-[16px] overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-full aspect-[4/3] bg-[#FCECE8] overflow-hidden">
+                            <img src="images/bouquet-roses.svg"
+                                 alt="Roses anciennes"
+                                 class="w-full h-full object-cover">
+                        </div>
+
+                        <div class="p-6 pb-2">
+                            <h3 class="font-[var(--font-titres)] text-[20px] font-bold text-[var(--color-encre)] mb-2">
+                                Roses anciennes
+                            </h3>
+
+                            <p class="text-[14px] font-normal text-[var(--color-encre)]/80 leading-relaxed">
+                                Roses parfumées d'un rosiériste de Touraine,
+                                en camaïeu de framboise.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between px-6 pb-6 pt-4">
+                        <span class="text-[18px] font-semibold text-[var(--color-bordeaux)]">
+                            45 €
+                        </span>
+
+                        <a href="#commander"
+                           class="bg-[var(--color-framboise)] text-white text-[16px] font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--color-bordeaux)] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">
+                            Commander
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARTE 3 : Champêtre -->
+                <article class="bg-[var(--color-creme)] rounded-[16px] overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-full aspect-[4/3] bg-[#EAF2ED] overflow-hidden">
+                            <img src="images/bouquet-champetre.svg"
+                                 alt="Bouquet champêtre"
+                                 class="w-full h-full object-cover">
+                        </div>
+
+                        <div class="p-6 pb-2">
+                            <h3 class="font-[var(--font-titres)] text-[20px] font-bold text-[var(--color-encre)] mb-2">
+                                Champêtre
+                            </h3>
+
+                            <p class="text-[14px] font-normal text-[var(--color-encre)]/80 leading-relaxed">
+                                Fleurs des champs, lavande et feuillages,
+                                comme une promenade en bord de Loire.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between px-6 pb-6 pt-4">
+                        <span class="text-[18px] font-semibold text-[var(--color-bordeaux)]">
+                            39 €
+                        </span>
+
+                        <a href="#commander"
+                           class="bg-[var(--color-framboise)] text-white text-[16px] font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--color-bordeaux)] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-framboise)]">
+                            Commander
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 4. SECTION ATOUTS  -->
+    <section class="bg-[var(--color-petale)] w-full py-16 md:py-24">
+        <div class="w-full max-w-[1152px] mx-auto px-4 md:px-8 flex flex-col items-center">
+
+            <div class="w-full text-center mb-12 md:mb-16">
+                <h2 class="font-[var(--font-titres)] text-[30px] md:text-[36px] font-bold text-[var(--color-encre)] leading-tight">
+                    Pourquoi choisir Fleurs Roussel ?
+                </h2>
+            </div>
+
+            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- ATOUT 1 -->
+                <article class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-5">
+                        <img src="images/icone-saison.svg" alt="" class="w-8 h-8 object-contain">
+                    </div>
+                    <h3 class="font-[var(--font-titres)] text-[20px] font-bold text-[var(--color-encre)] mb-2">
+                        Des fleurs de saison
+                    </h3>
+                    <p class="text-[14px] font-normal text-[var(--color-encre)]/80 leading-relaxed max-w-xs">
+                        Achetées chez des producteurs du Loir-et-Cher et de Touraine.
+                    </p>
+                </article>
+
+                <!-- ATOUT 2 -->
+                <article id="livraison" class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-5">
+                        <img src="images/icone-livraison.svg" alt="" class="w-8 h-8 object-contain">
+                    </div>
+                    <h3 class="font-[var(--font-titres)] text-[20px] font-bold text-[var(--color-encre)] mb-2">
+                        Livrées le jour même
+                    </h3>
+                    <p class="text-[14px] font-normal text-[var(--color-encre)]/80 leading-relaxed max-w-xs">
+                        Pour toute commande passée avant midi, dans Blois et ses environs.
+                    </p>
+                </article>
+
+                <!-- ATOUT 3 -->
+                <article class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-5">
+                        <img src="images/icone-saison.svg" alt="" class="w-8 h-8 object-contain">
+                    </div>
+                    <h3 class="font-[var(--font-titres)] text-[20px] font-bold text-[var(--color-encre)] mb-2">
+                        Composées à la main
+                    </h3>
+                    <p class="text-[14px] font-normal text-[var(--color-encre)]/80 leading-relaxed max-w-xs">
+                        Chaque bouquet est unique et emballé dans du papier recyclé.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5. SECTION ATELIERS-->
+    <section id="ateliers" class="bg-[var(--color-sauge)] w-full py-16 md:py-24">
+        <div class="w-full max-w-[1152px] mx-auto px-4 md:px-8 flex flex-col md:flex-row-reverse md:items-center gap-10">
+
+            <div class="w-full md:w-1/2">
+                <div class="w-full aspect-[4/3] rounded-[24px] overflow-hidden bg-[#EAF2ED]">
+                    <img src="images/atelier.svg" alt="Illustration de l'atelier floral" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 flex flex-col gap-6">
+
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-[var(--font-titres)] text-[30px] md:text-[36px] font-bold text-white leading-tight">
+                        Composez votre bouquet en atelier
+                    </h2>
+
+                    <p class="text-[16px] font-normal text-white/90 leading-relaxed">
+                        Un samedi par mois, Madame Roussel partage ses gestes de fleuriste. Vous repartez avec votre composition.
+                    </p>
+                </div>
+
+                <ul class="flex flex-col gap-2 text-[14px] font-normal text-white/90">
+                    <li class="flex items-center gap-2">
+                        <span>Six participants au maximum</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span>Fleurs et matériel fournis</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span>45 € par personne</span>
+                    </li>
+                </ul>
+
+                <!-- Bouton : Inter Semi Bold 16px + Hover + Focus -->
+                <div class="pt-2">
+                    <a href="#reserver"
+                       class="inline-block bg-white text-[var(--color-sauge)] text-[16px] font-semibold px-7 py-3.5 rounded-full hover:bg-[var(--color-creme)] transition shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--color-sauge)] focus:ring-white">
+                        Réserver une place
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 6. FOOTER / PIED DE PAGE -->
+    <footer id="contact" class="bg-[var(--color-encre)] w-full pt-16 pb-12 md:pt-24 md:pb-16 text-white">
+        <div class="w-full max-w-[1152px] mx-auto px-4 md:px-8">
+
+            <!-- Grille 3 colonnes -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+
+                <!-- Colonne 1 -->
+                <div class="flex flex-col gap-3">
+                    <h2 class="font-[var(--font-titres)] text-[24px] font-bold text-white">
+                        Fleurs Roussel
+                    </h2>
+                    <!-- Pied de page -->
+                    <p class="text-[14px] font-normal text-white/75 leading-relaxed">
+                        Artisan fleuriste à Blois depuis 1998.
+                    </p>
+                </div>
+
+                <!-- Colonne 2 : Boutique -->
+                <div class="flex flex-col gap-3">
+                    <h3 class="font-[var(--font-titres)] text-[20px] font-bold text-white">
+                        Boutique
+                    </h3>
+                    <p class="text-[14px] font-normal text-white/75 leading-relaxed">
+                        12 rue du Commerce, 41000 Blois<br>
+                        Du mardi au samedi, 9 h 30 à 19 h<br>
+                        02 54 00 00 00
+                    </p>
+                </div>
+
+                <!-- Colonne 3 : Liens utiles -->
+                <div class="flex flex-col gap-3">
+                    <h3 class="font-[var(--font-titres)] text-[20px] font-bold text-white">
+                        Liens utiles
+                    </h3>
+                    <ul class="flex flex-col gap-2 text-[14px] font-normal text-white/75">
+                        <li>
+                            <a href="#livraison" class="hover:text-white transition underline underline-offset-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--color-encre)] focus:ring-white">
+                                Livraison
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mentions" class="hover:text-white transition underline underline-offset-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--color-encre)] focus:ring-white">
+                                Mentions légales
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 text-center">
+                <span class="text-[14px] font-normal text-white/60">
+                    &copy; Fleurs Roussel.
+                </span>
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

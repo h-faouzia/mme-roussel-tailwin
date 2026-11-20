@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    /* Noms simples issus directement du guide de style Fleurs Roussel */
+    --color-framboise: #B83B5E;   /* Boutons, liens, focus[cite: 9] */
+    --color-bordeaux: #7A2840;    /* Nom, prix, survol[cite: 9] */
+    --color-sauge: #4E6650;       /* Surtitre, bandeau atelier[cite: 9] */
+    --color-creme: #FBF6F0;       /* En-tête, héros, cartes[cite: 9] */
+    --color-petale: #F6E3E3;      /* Section des atouts[cite: 9] */
+    --color-encre: #2B2024;       /* Texte, pied de page[cite: 9] */
+    --color-blanc: #FFFFFF;       /* Section des bouquets[cite: 9] */
+
+    /* Typographies */
+    --font-titres: "Playfair Display", serif;
+    --font-texte: "Inter", sans-serif;
+}
